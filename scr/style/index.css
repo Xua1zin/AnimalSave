@@ -1,0 +1,18 @@
+/*Global*/
+
+/*index*/   
+
+
+
+/*Home usuario*/
+.interfaceUsuario{
+    display: flex;
+    width: 100%;
+    background-color: #FF8811;
+}
+.interfaceUsuario img{
+    width: 24%;
+}
+.interfaceUsuario .borda_azul{
+    background-color: blue;
+}
