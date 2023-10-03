@@ -10,14 +10,7 @@
     background-color: #FF8811;
 }
 
-.interfaceUsuarioSlogan{
-    font-size: 20px;
-    color: #002D4C;
-    font-family: 'Fredoka', sans-serif;
-}
-
-.interfaceUsuarioMenu{
-    font-size: 15px;
+.interfaceUsuario h2{
     color: #002D4C;
     font-family: 'Fredoka', sans-serif;
 }
