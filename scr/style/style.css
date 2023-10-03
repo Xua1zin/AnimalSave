@@ -1,8 +1,6 @@
 /*Global*/
-
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
-
-/*index*/   
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+/*index*/
 
 
 /*Home usuario*/
@@ -12,9 +10,16 @@
     background-color: #FF8811;
 }
 
-.interfaceUsuario h2{
+.interfaceUsuarioSlogan{
+    font-size: 20px;
+    color: #002D4C;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.interfaceUsuarioMenu{
     font-size: 15px;
     color: #002D4C;
+    font-family: 'Fredoka', sans-serif;
 }
 
 .interfaceUsuario img{
@@ -23,10 +28,6 @@
 
 .interfaceUsuario h2 img{
     width: 2%;
-}
-
-.interfaceUsuarioBackground{
-    background-color: #F4E5CB;
 }
 
 /*Pet Tinder*/
@@ -97,7 +98,7 @@
 
 /*Tela de Cadastro*/
 
-.nav{
+.navCadastro{
     margin-top: 25px;
     margin-left: 25%;
     width: 100%;
