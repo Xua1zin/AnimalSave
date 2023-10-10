@@ -14,8 +14,9 @@
 }
 
 .menuUsuario {
-  top: 9%;
-  display: block;
+  top: 10%;
+  margin-left: 100px;
+  display: none;
   flex-direction: column;
   position: absolute;
   box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
@@ -67,10 +68,11 @@
 
 .menuInterfaceUsuarioDiv{
     display: block;
-    justify-content: flex-end;
 }
 
 .menuInterfaceUsuario{
+  display: flex;
+  flex-direction: column;
     font-size: 100%;
     width: 225.48px;
     display: flex;
@@ -82,10 +84,18 @@
   margin-left: 100px;
 }
 
+.usuarioClick{
+  display: flex; 
+  width: 15px; 
+  height: 15px; 
+  cursor: pointer;
+}
+
 .menuInterfaceUsuario img{
     width: 15px;
     margin-top: 5px;
     margin-bottom: 1px;
+    margin-left: 2px;
 }
 
 .slideshow {
