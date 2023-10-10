@@ -97,6 +97,10 @@
 }
 
 /*Tela de Cadastro - Valeska*/
+#bodyCadastro{
+    margin: 0px;
+    padding: 0px;
+}
 
 .navCadastro{
     align-items: center;
@@ -117,6 +121,40 @@
     height: 400px;
     position: absolute;
     right: 0;
-    top: 50;   
+    top: 130px;   
 }
 
+.traço{
+    height: 80px;
+    width: 1px;
+    background-color: #F7F7E7;
+}
+
+.opcaoNavCadastro{
+    margin-top: 10px;
+    margin-right: 320px;
+    display: flex;
+    align-items: center;
+}
+
+.opcaoNavCadastro p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #F7F7E7;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5;
+}
+
+.botoesLoginCadastro a{
+    margin: 4px;
+    transition: 0.5;
+    text-decoration: none;
+    color: #F7F7E7;
+}
+.botoesLoginCadastro p:hover{
+    font-size: 21px;
+}
+.botoesLoginCadastro a:hover{
+    font-size: 21px;
+}
