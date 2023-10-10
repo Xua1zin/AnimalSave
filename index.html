@@ -3,44 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fredoka One' rel='stylesheet'>
     <link rel="stylesheet" href="./scr/style/reset.css">
     <link rel="stylesheet" href="./scr/style/index.css">
     <title>AnimalSave</title>
 </head>
-<body>
+<body class="fundoCor">
+    <div class="fundoImgIndex">
+        <img src="./scr/imgs/cachorro e gato.webp" alt="Cachorro e gato">
+    </div>
     <div class="moldaLogin" id="moldaLoginID">
-        <h1>Login</h1>
-        <p>Usuário:</p>
-        <input type="text" placeholder="Nome do Usuário">
-        <p>Senha</p>
-        <input type="password" placeholder="Senha">
+        <div class="login">
+            <div>
+                <h1>Login:</h1>
+                <p onclick="abrirMenu()">X</p>
+            </div>
+            <p class="label">Usuário:</p>
+            <input class="input" type="text" placeholder="Nome do Usuário">
+            <p class="label">Senha:</p>
+            <input class="input" type="password" placeholder="Senha">
+            <p class="botaoLogar" onclick="login(`logado`)">Logar</p>
+            <p class="decoraText">Não possui uma conta?</p>
+            <a class="decoraText" href="./scr/pages/cadastro.html">Cadastre-se</a>
+        </div>
     </div>
     <nav class="menuIndex">
         <img src="./scr/imgs/Rectangle 4.png" alt="Logo AnimalSave Laranjado">
-        <div>
+        <div class="opcaoNav">
             <p>Sobre</p>
             <div class="traço"></div>
             <p>Transparência</p>
             <div class="traço"></div>
             <p>Legislação</p>
         </div>
-        <div>
-            <p onclick="">Login</p>
-            <P>Cadastro</P>
+        <div class="botoesLogin">
+            <p onclick="abrirMenu()">Login</p>
+            <a href="./scr/pages/cadastro.html">Cadastro</a>
         </div>
     </nav>
-    <main>
-        <img src="./scr/imgs/cachorro e gato.webp" alt="Cachorro e gato">
-        <div>
+    <main class="container">
+        <div class="div1">
             <p>Na dúvida, ajude, na</p>
-            <div>
-                <p> certeza,</p>
-                <p>adote</p>
+            <div class="div2">
+                <p>certeza,</p>
+                <p class="adote">adote !</p>
             </div>
         </div>
-        <div>
-            <p>Login</p>
-            <p>Cadastre-se</p>
+        <div class="botoes">
+            <p onclick="abrirMenu()">Login</p>
+            <a href="./scr/pages/cadastro.html">Cadastre-se</a>
         </div>
     </main>
     <script src="./scr/script/index.js"></script>

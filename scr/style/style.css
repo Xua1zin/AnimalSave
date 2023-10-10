@@ -27,10 +27,14 @@
 }
 
 .interfaceUsuario h2 img{
-    width: 2%;
+    width: 3%;
 }
 
 /*Pet Tinder*/
+
+#bodyPetID{
+    background-color: rgba(244, 229, 203, 1);
+}
 
 .headerPetTinder{
     align-items: center;
@@ -42,9 +46,13 @@
 }
 
 .mensajeBienvenida{
-    font-family: Arial, Helvetica, sans-serif;
+    color: #001535;
+    display: flex;
     align-items: center;
     margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Fredoka', sans-serif;
+
 }
 
 .fraseHead{
@@ -58,10 +66,8 @@
 }
 
 .mainPetTinder{
-    margin-top: 25px;
-    margin-left: 25%;
+    justify-content: center;
     width: 100%;
-    background-color: rgba(244, 229, 203, 1);
     display: flex;
 }
 
@@ -96,12 +102,6 @@
     display: flex;
 }
 
-/*Tela de Cadastro - Valeska*/
-#bodyCadastro{
-    margin: 0px;
-    padding: 0px;
-}
-
 .navCadastro{
     align-items: center;
     width: 100%;
@@ -134,27 +134,3 @@
     margin-top: 10px;
     margin-right: 320px;
     display: flex;
-    align-items: center;
-}
-
-.opcaoNavCadastro p{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    color: #F7F7E7;
-    margin: 15px;
-    cursor: pointer;
-    transition: 0.5;
-}
-
-.botoesLoginCadastro a{
-    margin: 4px;
-    transition: 0.5;
-    text-decoration: none;
-    color: #F7F7E7;
-}
-.botoesLoginCadastro p:hover{
-    font-size: 21px;
-}
-.botoesLoginCadastro a:hover{
-    font-size: 21px;
-}
