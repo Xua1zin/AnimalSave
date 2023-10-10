@@ -1,11 +1,8 @@
-/*Global*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
-/*index*/
 
-
-/*Home usuario*/
 .interfaceUsuario{
     display: flex;
+    justify-content: space-around;
     width: 100%;
     background-color: #FF8811;
 }
@@ -17,10 +14,11 @@
 }
 
 .imgLogo{
-    width: 100%;
-    justify-content: center;
-    margin-left: 140%;
-    margin-bottom: 2%;
+    width: 40%;
+}
+
+.imgLogo img {
+    max-width: 400px;
 }
 
 .sloganInterfaceUsuario{
@@ -31,104 +29,62 @@
     text-align: center;
 }
 
+@media (max-width: 832px) {
+    .sloganInterfaceUsuario {
+        font-size: 70%;
+    }
+  }
+
+.menuInterfaceUsuario div{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .menuInterfaceUsuario{
     font-size: 100%;
-    width: 100%;
-    text-align: right;
+    width: 30%;
+    max-width: 150px;
+    text-align: left;
     margin-top: 2%;
     margin-right: 2%;
 }
 
 .menuInterfaceUsuario img{
-    width: 1.3%;
-    margin-bottom: 0.2%;
+    width: 15px;
+    margin-bottom: 0.8%;
 }
-
-.arrow{
+.slideshow {
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slideshow img {
+    float: left;
+  }
+  
+  #prev,
+  #next {
+    position: absolute;
     display: block;
-    justify-content: right;
-    width: 10%;
-}
-
-.carousel{
-    display: flex;
-    width: 100%;
-}
-
-/*Pet Tinder*/
-
-.headerPetTinder{
-    align-items: center;
-    justify-content: space-between;
-    display: flex;
-    width: 100%;
-    height: 20%;
-    background-color: #FF8811;
-}
-
-.mensajeBienvenida{
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    margin-left: 50px;
-}
-
-.fraseHead{
-    margin-left: 27px;
-    margin-right: 0%;
-}
-
-.nombrePerro{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 25px;
-}
-
-.mainPetTinder{
-    margin-top: 25px;
-    margin-left: 25%;
-    width: 100%;
-    background-color: rgba(244, 229, 203, 1);
-    display: flex;
-}
-
-.espacioCach{
-    margin-left: 25%;
-    margin-right: 25%;
-    display: flex;
-    align-items: center;
-}
-
-.espacioCach img{
-    width: 350px;
-    height: 350px;
-}
-
-.titulo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.descripcion{
-    display: block;
-    margin-top: 1cm;
-}
-
-.quiero{
-    display: block;
-    width: 50px;
-    height: 50px;
-}
-
-.divBotoes{
-    display: flex;
-}
-
-/*Tela de Cadastro*/
-
-.navCadastro{
-    margin-top: 25px;
-    margin-left: 25%;
-    width: 100%;
-    background-color: #60E1E0;
-    display: flex;
-    color: #001535; 
-    font-family: 'Quicksand';font-size: 22px;
-}
+    top: 100px;
+    width: 100px;
+    height: 100px;
+    text-indent: -9999px;
+  }
+  
+  #prev {
+    left: 0;
+    background: url(https://image.ibb.co/jevVLk/prev.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
+  
+  #next {
+    right: 0;
+    background: url(https://image.ibb.co/eGoT6Q/next.png);
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
