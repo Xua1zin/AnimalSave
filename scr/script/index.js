@@ -15,4 +15,4 @@ window.onload = function verificaLogin(){
     if(loginRecuperada === "logado"){
         window.location.href = "http://127.0.0.1:5500/AnimalSave/scr/pages/menu_usuario.html";
     }
-}
+};
