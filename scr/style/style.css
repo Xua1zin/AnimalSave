@@ -102,64 +102,35 @@
     display: flex;
 }
 
-.cachorroAdoçao{
-    padding-top: 20px;
-    width: 250px;
-    height: 250px;
-}
-
-#bienID{
-    color: #001535;
-    margin-right: 50px;
-}
-
-/*Tela de Cadastro*/
-
 .navCadastro{
-    margin-top: 25px;
-    margin-left: 25%;
+    align-items: center;
     width: 100%;
-    background-color: #60E1E0;
-    display: flex;
-    color: #001535; 
-    font-family: 'Quicksand';font-size: 22px;
-}
-
-.logoEvento{
-    padding-top: 70px;
-    width: 250px;
-    height: 250px;
-}
-
-.navEventos{
+    height: 130px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    background-color: #FF8811;
+    background-color: #60E1E0;
 }
 
-.navEventos img{
+.navCadastro img{
     width: 400px;
-    height: 120px;
+    height: 100px;
 }
 
-.navEventos div{
-    width: 230px;
+.bodyCadastro img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 130px;   
 }
 
-.divLoginEventos{
-    color: #001535;
+.traço{
+    height: 80px;
+    width: 1px;
+    background-color: #F7F7E7;
+}
+
+.opcaoNavCadastro{
+    margin-top: 10px;
+    margin-right: 320px;
     display: flex;
-    align-items: center;
-    margin-left: 50px;
-    font-size: 20px;
-    font-family: 'Fredoka', sans-serif;
-}
-
-.headerEventos{
-    display: block;
-    margin: 0 auto;
-    font-size: 20px;
-    font-family: 'Fredoka', sans-serif;
-    width: 400px;
-}
