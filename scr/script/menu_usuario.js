@@ -1,8 +1,8 @@
-function abrirMenu(){
-    let ligar = document.getElementById("menuUsuario");
-    if(ligar.style.display === "none"){
+function abrirMenu() {
+    let ligar = document.getElementById("menuUsuarioID");
+    if (ligar.style.display === "" || ligar.style.display === "none") {
         ligar.style.display = "block";
-    }else{
+    } else {
         ligar.style.display = "none";
-    };
+    }
 }

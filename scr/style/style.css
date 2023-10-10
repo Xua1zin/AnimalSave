@@ -13,19 +13,49 @@
     font-weight: bold;
 }
 
+.menuUsuario {
+  top: 9%;
+  display: block;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+  background-color: #F4E5CB;
+  color: #002D4C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  height: 70px;
+  width: 112px;
+  border-radius: 5px;
+}
+
+.menuUsuario li{
+  display: block;
+  list-style-type: none;
+  margin: 4px;
+}
+
+.menuUsuario li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menuUsuario li a:hover{
+  text-decoration:underline;
+}
+
 .imgLogo{
-    width: 40%;
+  width: 40%;
+  text-align: center;
 }
 
 .imgLogo img {
-    max-width: 400px;
+  max-width: 400px;
 }
 
 .sloganInterfaceUsuario{
     font-size: 130%;
-    width: 20%;
-    margin-top: 2%;
-    margin-left: 2%;
+    width: 225.48px;
+    margin: 2%;
     text-align: center;
 }
 
@@ -35,24 +65,29 @@
     }
   }
 
-.menuInterfaceUsuario div{
-    display: flex;
+.menuInterfaceUsuarioDiv{
+    display: block;
     justify-content: flex-end;
 }
 
 .menuInterfaceUsuario{
     font-size: 100%;
-    width: 30%;
-    max-width: 150px;
+    width: 225.48px;
+    display: flex;
     text-align: left;
-    margin-top: 2%;
-    margin-right: 2%;
+    margin: 2%;
+}
+
+.menuInterfaceUsuario h2{
+  margin-left: 100px;
 }
 
 .menuInterfaceUsuario img{
     width: 15px;
-    margin-bottom: 0.8%;
+    margin-top: 5px;
+    margin-bottom: 1px;
 }
+
 .slideshow {
     width: 900px;
     height: 300px;
@@ -77,14 +112,14 @@
   
   #prev {
     left: 0;
-    background: url(https://image.ibb.co/jevVLk/prev.png);
-    background-size: 100px 100px;
+    background: url(../imgs/Polygon\ 4.png);
+    background-size: 50px 100px;
     background-repeat: no-repeat;
   }
   
   #next {
     right: 0;
-    background: url(https://image.ibb.co/eGoT6Q/next.png);
-    background-size: 100px 100px;
+    background: url(../imgs/Polygon\ 5.png);
+    background-size: 50px 100px;
     background-repeat: no-repeat;
   }
