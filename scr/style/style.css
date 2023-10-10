@@ -5,31 +5,93 @@
 
 /*Home usuario*/
 .interfaceUsuario{
-    display: flex;
-    width: 100%;
-    background-color: #FF8811;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  background-color: #FF8811;
 }
 
-.interfaceUsuarioSlogan{
-    font-size: 20px;
-    color: #002D4C;
-    font-family: 'Fredoka', sans-serif;
+.interfaceUsuario h2{
+  color: #002D4C;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
 }
 
-.interfaceUsuarioMenu{
-    font-size: 15px;
-    color: #002D4C;
-    font-family: 'Fredoka', sans-serif;
+.imgLogo{
+  width: 40%;
 }
 
-.interfaceUsuario img{
-    width: 24%;
+.imgLogo img {
+  max-width: 400px;
 }
 
-.interfaceUsuario h2 img{
-    width: 3%;
+.sloganInterfaceUsuario{
+  font-size: 130%;
+  width: 20%;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
 }
 
+@media (max-width: 832px) {
+  .sloganInterfaceUsuario {
+      font-size: 70%;
+  }
+}
+
+.menuInterfaceUsuario div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menuInterfaceUsuario{
+  font-size: 100%;
+  width: 30%;
+  max-width: 150px;
+  text-align: left;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+.menuInterfaceUsuario img{
+  width: 15px;
+  margin-bottom: 0.8%;
+}
+.slideshow {
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow img {
+  float: left;
+}
+
+#prev,
+#next {
+  position: absolute;
+  display: block;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+}
+
+#prev {
+  left: 0;
+  background: url(https://image.ibb.co/jevVLk/prev.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+#next {
+  right: 0;
+  background: url(https://image.ibb.co/eGoT6Q/next.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
 /*Pet Tinder*/
 
 #bodyPetID{
