@@ -71,7 +71,7 @@
 
 #prev,
 #next {
-  position: absolute;
+  position:absolute;
   display: block;
   top: 100px;
   width: 100px;
@@ -81,14 +81,14 @@
 
 #prev {
   left: 0;
-  background: url(https://image.ibb.co/jevVLk/prev.png);
+  background: url(../imgs/Polygon\ 4.png);
   background-size: 100px 100px;
   background-repeat: no-repeat;
 }
 
 #next {
   right: 0;
-  background: url(https://image.ibb.co/eGoT6Q/next.png);
+  background: url(../imgs/Polygon\ 5.png);
   background-size: 100px 100px;
   background-repeat: no-repeat;
 }
@@ -196,3 +196,4 @@
     margin-top: 10px;
     margin-right: 320px;
     display: flex;
+}
