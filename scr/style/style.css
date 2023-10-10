@@ -47,8 +47,12 @@
 
 .mensajeBienvenida{
     color: #001535;
+    display: flex;
     align-items: center;
     margin-left: 50px;
+    font-size: 25px;
+    font-family: 'Fredoka', sans-serif;
+
 }
 
 .fraseHead{
@@ -119,4 +123,43 @@
     display: flex;
     color: #001535; 
     font-family: 'Quicksand';font-size: 22px;
+}
+
+.logoEvento{
+    padding-top: 70px;
+    width: 250px;
+    height: 250px;
+}
+
+.navEventos{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FF8811;
+}
+
+.navEventos img{
+    width: 400px;
+    height: 120px;
+}
+
+.navEventos div{
+    width: 230px;
+}
+
+.divLoginEventos{
+    color: #001535;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+}
+
+.headerEventos{
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    font-family: 'Fredoka', sans-serif;
+    width: 400px;
 }
