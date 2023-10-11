@@ -14,7 +14,7 @@
 }
 
 .menuUsuario {
-  top: 10%;
+  top: 8%;
   margin-left: 100px;
   display: none;
   flex-direction: column;
@@ -98,38 +98,62 @@
     margin-left: 2px;
 }
 
-.slideshow {
-    width: 900px;
-    height: 300px;
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slideshow img {
-    float: left;
-  }
-  
-  #prev,
-  #next {
-    position: absolute;
-    display: block;
-    top: 100px;
-    width: 100px;
-    height: 100px;
-    text-indent: -9999px;
-  }
-  
-  #prev {
-    left: 0;
-    background: url(../imgs/Polygon\ 4.png);
-    background-size: 50px 100px;
-    background-repeat: no-repeat;
-  }
-  
-  #next {
-    right: 0;
-    background: url(../imgs/Polygon\ 5.png);
-    background-size: 50px 100px;
-    background-repeat: no-repeat;
-  }
+.carouselContainer{
+  position: relative;
+  padding: 35px;
+  padding-left: 400px;
+  padding-right: 400px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.gallery-wrapper{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.gallery{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 30px;
+}
+
+.arrowLeft,
+.arrowRight{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to left, transparent 0%, transparent);
+}
+
+.arrowRight{
+  left: auto;
+  right: 0;
+  background: linear-gradient(to right, transparent 0%, transparent);
+}
+
+.item{
+  border-radius: 8px;
+  margin-top: 100px;
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.currentItem{
+  margin-top: 0;
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
