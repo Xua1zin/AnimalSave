@@ -14,7 +14,7 @@
 }
 
 .menuUsuario {
-  top: 8%;
+  top: 10%;
   margin-left: 100px;
   display: none;
   flex-direction: column;
@@ -27,6 +27,7 @@
   height: 70px;
   width: 112px;
   border-radius: 5px;
+  z-index: 6;
 }
 
 .menuUsuario li{
@@ -100,12 +101,10 @@
 
 .carouselContainer{
   position: relative;
-  padding: 35px;
-  padding-left: 400px;
-  padding-right: 400px;
-  max-width: 1000px;
+  padding-top: 35px;
+  padding-left: 165px;
+  max-width: 1280px;
   margin: 0 auto;
-  margin-top: 70px;
 }
 
 .gallery-wrapper{
@@ -122,7 +121,7 @@
 .arrowLeft,
 .arrowRight{
   position: absolute;
-  top: 0;
+  top: 70px;
   left: 0;
   right: auto;
   bottom: 0;
@@ -144,16 +143,15 @@
 
 .item{
   border-radius: 8px;
-  margin-top: 100px;
-  width: 300px;
-  height: 400px;
+  margin-top: 50px;
+  width: 200px;
+  height: 300px;
   object-fit: cover;
-  flex-shrink: 0;
 }
 
 .currentItem{
   margin-top: 0;
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 400px;
   object-fit: cover;
 }
