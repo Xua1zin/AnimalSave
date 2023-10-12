@@ -194,9 +194,9 @@ html, body, main {
 .arrowRight{
   position: absolute;
   top: 44%;
-  width: 400px;
+  margin-left: 8%;
+  margin-right: 8%;
   text-align: center;
-  color: white;
   cursor: pointer;
 }
 .arrowRight{
