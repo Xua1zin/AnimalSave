@@ -109,8 +109,8 @@ html, body, main {
 
 #carousel {
   position: relative;
-  height: 600px;
-  top: 50%;
+  height: 780px;
+  top: 63%;
   transform: translateY(-50%);
   overflow: hidden;
 }
@@ -120,11 +120,11 @@ html, body, main {
   opacity: 1;
 }
 #carousel div img {
-  border-radius: 10px;
+  border-radius: 30px;
   width: 400px;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
-  transition: width 1s;
+  transition: 1s;
 }
 #carousel div.hideLeft {
   left: 0%;
@@ -149,7 +149,7 @@ html, body, main {
 }
 #carousel div.prev img {
   width: 300px;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 #carousel div.prevLeftSecond {
@@ -160,7 +160,7 @@ html, body, main {
 }
 #carousel div.prevLeftSecond img {
   width: 250px;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
 }
 #carousel div.selected {
@@ -175,7 +175,7 @@ html, body, main {
 }
 #carousel div.next img {
   width: 300px;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 #carousel div.nextRightSecond {
@@ -186,14 +186,14 @@ html, body, main {
 }
 #carousel div.nextRightSecond img {
   width: 250px;
-  height: 350px;
+  height: 450px;
   object-fit: cover;
 }
 
 .arrowLeft,
 .arrowRight{
   position: absolute;
-  top: 36%;
+  top: 44%;
   width: 400px;
   text-align: center;
   color: white;
