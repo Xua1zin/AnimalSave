@@ -2,6 +2,8 @@
 
 .interfaceUsuario{
     display: flex;
+    position: fixed;
+    top: 0;
     justify-content: space-between;
     width: 100%;
     background-color: #FF8811;
@@ -100,18 +102,11 @@
     margin-left: 2px;
 }
 
-html, body, main {
-  width: 100%;
-  height: 90%;
-  margin: 0;
-  padding: 0;
-}
-
 #carousel {
+  margin-top: 150px; 
+  width: 100%;
   position: relative;
   height: 780px;
-  top: 63%;
-  transform: translateY(-50%);
   overflow: hidden;
 }
 #carousel div {
@@ -201,65 +196,9 @@ html, body, main {
   margin-right: 8%;
   text-align: center;
   cursor: pointer;
+  z-index: 10;
 }
 .arrowRight{
   left: auto;
   right: 0;
 }
-
-/*.carouselContainer{
-  position: relative;
-  padding-top: 35px;
-  padding-left: 555px;
-  padding-right: 555px;
-  max-width: 1580px;
-  margin: 0 auto;
-}
-
-.gallery-wrapper{
-  overflow-x: hidden;
-}
-
-.gallery{
-  display: flex;
-  flex-flow: row nowrap;
-  gap: 30px;
-}
-
-.arrowLeft,
-.arrowRight{
-  position: absolute;
-  top: 70px;
-  left: 0;
-  right: auto;
-  bottom: 0;
-  font-size: 20px;
-  line-height: 250px;
-  width: 100px;
-  text-align: center;
-  color: white;
-  cursor: pointer;
-  border: none;
-  background: linear-gradient(to left, transparent 0%, transparent);
-}
-
-.arrowRight{
-  left: auto;
-  right: 0;
-  background: linear-gradient(to right, transparent 0%, transparent);
-}
-
-.item{
-  border-radius: 8px;
-  margin-top: 50px;
-  width: 200px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.currentItem{
-  margin-top: 0;
-  width: 300px;
-  height: 400px;
-  object-fit: cover;
-}*/

@@ -13,39 +13,7 @@ function menuUsuario(user) {
     console.log(user.nome);
 }
 menuUsuario(user);
-/*const controls = document.querySelectorAll('.control');
-let currentItem = 0;
-const item = document.querySelectorAll('.item');
-const maxItem = item.length;
 
-controls.forEach(control => {
-    control.addEventListener('click', () => {
-        const isLeft = control.classList.contains('arrowLeft');
-    
-        if(isLeft){
-            currentItem -= 1;
-        }
-        else{
-            currentItem += 1;
-        }
-
-        if(currentItem >= maxItem){
-            currentItem = 0;
-        }
-        if(currentItem < 0){
-            currentItem = maxItem - 1;
-        }
-
-        console.log("control", isLeft, currentItem);
-        item.forEach(item => item.classList.remove('currentItem'));
-
-        item[currentItem].scrollIntoView({
-            inline:"center",
-            behavior: "smooth"
-        })
-        item[currentItem]. classList.add("currentItem");
-    })
-})*/
 function moveToSelected(element) {
     if (element == "next") {
         var selected = $(".selected").next();
