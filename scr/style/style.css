@@ -2,8 +2,6 @@
 
 .interfaceUsuario{
     display: flex;
-    position: fixed;
-    top: 0;
     justify-content: space-between;
     width: 100%;
     background-color: #FF8811;
@@ -193,7 +191,7 @@
 .arrowLeft,
 .arrowRight{
   position: absolute;
-  top: 44%;
+  top: 40%;
   margin-left: 8%;
   margin-right: 8%;
   text-align: center;
