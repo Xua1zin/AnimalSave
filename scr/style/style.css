@@ -307,3 +307,44 @@ cursor: pointer;
   margin-bottom: 1px;
   margin-left: 2px;
 }
+
+/*Petflix*/
+
+.backgroundImg{
+  background-image: url(../imgs/image\ 6.png); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.searchArea{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.search{
+  padding-left: 15px;
+  border-radius: 8px;
+  width: 600px;
+  height: 40px;
+  text-align: justify;
+  font-size: 20px;
+  border: 0;
+  margin-top: 20px;
+}
+
+.buttonArea{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+.searchButton{
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+  color: #002D4C;
+  font-size: 20px;
+  border: 0;
+  border-radius: 8px;
+  background-color: #60E1E0;
+  width: 157px;
+  height: 36px;
+}
