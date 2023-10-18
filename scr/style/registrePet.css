@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+html{
+    outline: 0;
+}
+body{
+    background-color: #f7f7f7;
+}
+
+/* Navegação registro de Pet*/
+
+.classNavGenerica{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: #60E1E0;
+}
+.classNavGenerica div{
+    width: 280px;
+}
+.classNavGenerica img{
+    height: 100px;
+    width: 380px;
+}
+.classNavGenerica div p{
+    text-align: center;
+    margin-left: 50px;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #002D4C;
+    font-weight: bold;
+}
+.menuInterfaceUsuario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuInterfaceUsuario h2{
+    font-family: 'Fredoka', sans-serif;
+    color: #002D4C;
+    font-size: 20px;
+}
+#nomeUsuario{
+    margin-left: 74px;
+}
+.usuarioClick{
+    display: flex;
+}
+.usuarioClick img{
+    margin-top: 9px;
+    margin-left: 7px;
+    height: 8px;
+    width: 14px;
+    cursor: pointer;
+    text-align: center;
+}
+.usuarioClick h2{
+    font-family: 'Fredoka', sans-serif;
+    color: #002D4C;
+    font-size: 16px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#menuUsuarioID{
+    width: 130px;
+}
+.menuUsuario {
+    top: 75px;
+    right: 75px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+    background-color: #F4E5CB;
+    font-family: 'Quicksand', sans-serif;
+    height: 70px;
+    width: 20px;
+    border-radius: 5px;
+    z-index: 12;
+}
+.menuUsuario li{
+    display: block;
+    list-style-type: none;
+    margin: 4px;
+}
+.menuUsuario li a{
+    text-decoration: none;
+    color: #002D4C;
+    font-size: 15px;
+    margin-left: 0px;
+}
+.menuUsuario li a:hover{
+    text-decoration:underline;
+}
+
+/* Area de formularios */
+
+.conteinerForm{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    border-left: solid 1px #002D4C;
+    height: 100%;
+    max-width: 1349px;
+}
+.conteinerForm img{
+    height: 103%;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+}
+.formDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 15px;
+}
+.formDiv h1{
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.formDiv div{
+    margin-top: 5px;
+}
+.formDiv h2{
+    margin-top: 10px;
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.formDiv div label{
+    margin-top: 10px;
+    font-family: 'Fredoka', sans-serif;
+    color: #002D4C;
+    font-size: 16px;
+    font-weight: bold;
+}
+.formDiv label{
+    margin-top: 10px;
+    font-family: 'Fredoka', sans-serif;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+.inputText{
+    font-family: 'Fredoka', sans-serif;
+    color: #002D4C;
+    background-color: #F4E5CB;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    margin-top: 4px;
+}
+.inputText:focus{
+    outline: none;
+}
+.inputTextNumber{
+    font-family: 'Fredoka', sans-serif;
+    color: #002D4C;
+    background-color: #F4E5CB;
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    width: 50px;
+    margin-top: 4px;
+}
+.inputTextNumber:focus{
+    outline: none;
+}
+.textareaClass{
+    background-color: #F4E5CB;
+    color: #002D4C;
+    font-family: 'Fredoka', sans-serif;
+    border: none;
+    border-radius: 10px;
+    margin-top: 4px;
+    resize: none;
+}
+.textareaClass:focus{
+    outline: none;
+}
+.formDiv button{
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 10px;
+    background-color: #f7f7f7;
+    border: solid 2px #FF8811;
+    border-radius: 10px;
+    height: 35px;
+    width: 100px;
+    color: #FF8811;
+    cursor: pointer;
+}
+.esconde{
+    display: none;
+}

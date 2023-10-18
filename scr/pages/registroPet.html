@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/registrePet.css">
+    <title>Animal Save / Registre seu Pet</title>
+</head>
+<body>
+    <nav class="classNavGenerica">
+        <div>
+            <p>Na dúvida, ajude, na</p>
+            <p>certeza, adote.</p>
+        </div>
+        <img src="../imgs/animalSaveAzulClaro 2.png" alt="Logo AnimalSave">
+        <div class="menuInterfaceUsuario">
+            <h2>Seja bem vindo</h2>
+            <div class="usuarioClick">
+                <h2 id="nomeUsuario" onclick="abrirMenu()"></h2>
+                <img src="../imgs/Polygon 6.png" alt="" onclick="abrirMenu()">
+                <div class="menuUsuario" id="menuUsuarioID">
+                    <li><a href="">Assinaturas</a></li>
+                    <li><a href="">Configurações</a></li>
+                    <li><a href="/AnimalSave/index.html">Sair</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="conteinerForm">
+        <img src="../imgs/image 5.png" alt="Cachorro sorrindo">
+        <div class="formDiv" id="formDivID">
+            <h1>Registre seu animal</h1>
+            <div>
+                <input type="radio" required name="especie" value="Cachorro"><label for="especie">Cachorro</label>
+            </div>
+            <div>
+                <input type="radio" required name="especie" value="Gato"><label for="especie">Gato</label>
+            </div>
+
+            <h2>Sexo</h2>
+            <div>
+                <input type="radio" required name="sexo" value="Macho"><label for="sexo">Macho</label>
+                <input type="radio" required name="sexo" value="Fêmea"><label for="sexo">Fêmea</label>
+            </div>
+
+            <label for="Nome">Nome do pet</label>
+            <input class="inputText" required type="text" name="Nome">
+
+            <label for="descricao">Sobre o Pet?</label>
+            <textarea class="textareaClass" required name="descricao" id="" cols="30" rows="10"></textarea>
+
+            <label for="Idade">Idade do pet?</label>
+            <input class="inputTextNumber" required type="number" name="Idade">
+
+            <label for="Raca">Raça</label>
+            <input class="inputText" required type="text" name="Raca">
+
+            <button id="botao">Próximo</button>
+        </div>
+        <div class="formDiv">
+            
+        </div>
+    </div>
+    <script src="../script/registrePet.js">
+        let botao = document.getElementById("formDivID");
+        let form = document.querySelector('input[name="especie"]:checked').value;
+        botao.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log("oi")
+        console.log(form);
+        });
+    </script>
+</body>
+</html>
