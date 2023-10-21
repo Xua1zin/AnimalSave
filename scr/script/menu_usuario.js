@@ -59,20 +59,20 @@ $(document).keydown(function (e) {
 
 $("#carousel div").click(function () {
     if (parseFloat($(this).css("opacity")) > 0) {
-      moveToSelected($(this));
+        moveToSelected($(this));
     }
   });
   
   $("#prev").click(function () {
     var selected = $(".selected");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-      moveToSelected("prev");
+        moveToSelected("prev");
     }
   });
   
   $("#next").click(function () {
     var selected = $(".selected");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-      moveToSelected("next");
+        moveToSelected("next");
     }
   });
