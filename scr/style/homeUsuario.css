@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+.interfaceUsuario {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  background-color: #FF8811;
+  z-index: 11;
+}
+
+.interfaceUsuario h2 {
+  color: #002D4C;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+}
+
+.menuUsuario {
+  top: 70px;
+  margin-left: 100px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+  background-color: #F4E5CB;
+  color: #002D4C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  height: 70px;
+  width: 112px;
+  border-radius: 5px;
+  z-index: 12;
+}
+
+.menuUsuario li {
+  display: block;
+  list-style-type: none;
+  margin: 4px;
+}
+
+.menuUsuario li a {
+  text-decoration: none;
+  color: black;
+}
+
+.menuUsuario li a:hover {
+  text-decoration: underline;
+}
+
+.imgLogo {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.imgLogo img {
+  max-width: 400px;
+}
+
+.sloganInterfaceUsuario {
+  font-size: 130%;
+  width: 225.48px;
+  margin: 1.9%;
+  text-align: center;
+}
+
+.menuInterfaceUsuarioDiv {
+  display: block;
+}
+
+.menuInterfaceUsuario {
+  display: flex;
+  flex-direction: column;
+  font-size: 100%;
+  width: 225.48px;
+  display: flex;
+  text-align: left;
+  margin: 1.9%;
+}
+
+.menuInterfaceUsuario h2 {
+  margin-left: 100px;
+}
+
+.usuarioClick {
+  display: flex;
+  white-space: nowrap;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.menuInterfaceUsuario img {
+  width: 15px;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  margin-left: 2px;
+}
+
+#carousel {
+  margin-top: 50px;
+  width: 100%;
+  position: relative;
+  height: 780px;
+  overflow: hidden;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 1s, left 1s, opacity 1s, z-index 0s;
+  opacity: 1;
+}
+
+#carousel div img {
+  border-radius: 30px;
+  width: 400px;
+  height: 600px;
+  transition: 1s;
+  object-fit: cover;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  pointer-events: none;
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+}
+
+#carousel div.hideRight {
+  left: 100%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+  pointer-events: none;
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+
+#carousel div.prev {
+  cursor: pointer;
+  z-index: 5;
+  left: 30%;
+  transform: translateY(70px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  width: 300px;
+  height: 450px;
+}
+
+#carousel div.prev a {
+  pointer-events: none;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#carousel div.prevLeftSecond img {
+  width: 150px;
+  height: 225px;
+}
+
+#carousel div.selected {
+  cursor: pointer;
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+  cursor: pointer;
+  z-index: 5;
+  left: 70%;
+  transform: translateY(70px) translateX(-50%);
+}
+
+#carousel div.next img {
+  width: 300px;
+  height: 450px;
+}
+
+#carousel div.next a {
+  pointer-events: none;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+#carousel div.nextRightSecond img {
+  width: 150px;
+  height: 225px;
+}
+
+.arrowLeft,
+.arrowRight {
+  position: absolute;
+  top: 40%;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrowRight {
+  left: auto;
+  right: 0;
+}
+
+.arrowLeft img{
+  width: 50%;
+}
+
+.arrowRight img{
+  width: 50%;
+}
+
+/* Estilos para 1280x720 */
+@media (max-width: 1280px) and (max-height: 720px) {
+  .interfaceUsuario {
+    width: 100%;
+    height: 80px;
+  }
+
+  .menuUsuario {
+    top: 70px;
+    margin-left: 25.53px;
+    font-size: 15px;
+    height: 70px;
+    width: 112px;
+    border-radius: 5px;
+    z-index: 12;
+  }
+
+  .menuUsuario li {
+    margin: 4px;
+  }
+
+  .imgLogo {
+    width: 100%;
+  }
+
+  .imgLogo img {
+    max-width: 250px;
+  }
+
+  .sloganInterfaceUsuario {
+    font-size: 100%;
+    width: 200px;
+    margin: 2%;
+  }
+
+  .menuInterfaceUsuario {
+    font-size: 100%;
+    width: 200px;
+    margin: 2%;
+  }
+
+  .menuInterfaceUsuario h2 {
+    margin-left: 25.53px;
+  }
+
+  .usuarioClick {
+    width: 15px;
+    height: 15px;
+  }
+
+  .menuInterfaceUsuario img {
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+  }
+
+  #carousel {
+    margin-top: 25px;
+    width: 100%;
+    height: 425px;
+  }
+
+  #carousel div img {
+    border-radius: 20px;
+    width: 200px;
+    height: 300px;
+  }
+
+  #carousel div.hideLeft img {
+    width: 100px;
+  }
+
+  #carousel div.hideLeft {
+    left: 0%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    pointer-events: none;
+  }
+
+  #carousel div.hideRight img {
+    width: 100px;
+  }
+
+  #carousel div.hideRight {
+    left: 100%;
+    opacity: 0;
+    transform: translateY(50%) translateX(-50%);
+    pointer-events: none;
+  }
+
+  #carousel div.prev {
+    left: 34%;
+    transform: translateY(35px) translateX(-50%);
+  }
+
+  #carousel div.prev img {
+    width: 150px;
+    height: 225px;
+  }
+
+  #carousel div.prevLeftSecond img {
+    width: 150px;
+    height: 225px;
+  }
+
+  #carousel div.selected {
+    cursor: pointer;
+    z-index: 10;
+    left: 50%;
+    transform: translateY(0px) translateX(-50%);
+  }
+
+  #carousel div.next {
+    cursor: pointer;
+    z-index: 5;
+    left: 66%;
+    transform: translateY(35px) translateX(-50%);
+  }
+
+  #carousel div.next img {
+    width: 150px;
+    height: 225px;
+  }
+
+  #carousel div.next a {
+    pointer-events: none;
+  }
+
+  #carousel div.nextRightSecond {
+    z-index: 4;
+    left: 81%;
+    transform: translateY(50%) translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  #carousel div.nextRightSecond img {
+    width: 150px;
+    height: 225px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    position: absolute;
+    top: 35%;
+    margin-left: 16%;
+    margin-right: 16%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .arrowRight {
+    left: auto;
+    right: 0;
+  }
+
+  .arrowLeft img{
+    width: 25%;
+  }
+  
+  .arrowRight img{
+    width: 25%;
+  }
+}
