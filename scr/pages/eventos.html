@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../style/reset.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/eventos.css">
     <link rel="stylesheet" href="../style/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AnimalSave</title>
@@ -12,21 +12,62 @@
 </head>
 <body class="fundoCor">
     
-    <nav class="navEventos">
-        <div class="mensajeBienvenida">
-            <p>
-            Na duvida, ajude, na certeza, adote
-            </p>
+    <nav class="interfaceUsuario">
+        <div class="sloganInterfaceUsuario">
+            <h2>Na dúvida, ajude, na certeza, adote.</h2>
         </div>
-        <img src="../imgs/Rectangle 4.png" alt="Logo Animal Save">
-        <div class= "divLoginEventos">
-            <p>Seja bem-vindo</p>
-            <p>(usuario)</p> <!-- <img src="" alt=""> por imagem da setinha-->
+
+        <div class="imgLogo"><a href="/scr/pages/menu_usuario.html"><img src="../imgs/Rectangle 4.png" alt=""></a>
+        </div>
+
+        <div class="menuInterfaceUsuario">
+            <div class="menuInterfaceUsuarioDiv">
+                <h2>Seja bem vindo,</h2>
+            </div>
+
+            <div class="usuarioClick">
+                <h2 id="nomeUsuario" onclick="abrirMenu()"></h2>
+                <img src="../imgs/Polygon 6.png" alt="" onclick="abrirMenu()">
+                    <div class="menuUsuario" id="menuUsuarioID">
+                        <li><a href="">Assinaturas</a></li>
+                        <li><a href="">Configurações</a></li>
+                        <li><a href="/index.html">Sair</a></li>
+
+
+                </div>
+            </div>
         </div>
     </nav>
-    <header >
-        <input type="text" placeholder="Procure aqui seu evento!" class="headerEventos">
-    </header>
-    <img src="../imgs/lucasImg.jpg" alt="Logo evento" class = "logoEvento">
+
+    <div class="filtrosEventos">
+        Filtros
+    </div>
+       
+    <div class="barraEventos">
+        <input type="text" name="inputEventos" class="inputEventos" placeholder="Pesquise aqui seu evento!">
+    </div>
+
+    <div style = "display: flex; justify-content: center;">
+        <div class="eventosButtonArea">
+            <button class = "eventosSearchButton">Novidades</button>
+            <button class = "eventosSearchButton">Destaques</button>
+            <button class = "eventosSearchButton">Anuncie</button>
+        </div>
+    </div>
+
+    <div class="infoEventoArea">
+        <div class="infoEvento">
+            <img src="../imgs/lucasImg.jpg" alt="eventoIMG" class = "eventoImg">
+                <div class="liEvento">
+                    <li>Atencao: se voce nao pode levar o seu pet para <br> receber a vacina antirrabica no dia da campanha,
+                        nao se preocupe!</li>
+                        <li class="liEvento2">Horario: 16h</li>
+                        <li class="liEvento2">Local: Foz do Iguaçu, Rua X, 1234</li>
+            </div>
+        </div>
+    </div>
+
 </body>
+<script src="../script/eventos.js">
+</script>
 </html>

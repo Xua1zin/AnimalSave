@@ -1,0 +1,270 @@
+/*Global*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+/*index*/
+
+
+/*Home usuario*/
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
+
+.interfaceUsuario{
+    display: flex;
+    top: 0;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #FF8811;
+}
+
+.interfaceUsuario h2{
+    color: #002D4C;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: bold;
+}
+
+.menuUsuario {
+  top: 10%;
+  margin-left: 100px;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+  background-color: #F4E5CB;
+  color: #002D4C;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 15px;
+  height: 70px;
+  width: 112px;
+  border-radius: 5px;
+  z-index: 6;
+}
+
+.menuUsuario li{
+  display: block;
+  list-style-type: none;
+  margin: 4px;
+}
+
+.menuUsuario li a{
+  text-decoration: none;
+  color: black;
+}
+
+.menuUsuario li a:hover{
+  text-decoration:underline;
+}
+
+.imgLogo{
+  width: 40%;
+  text-align: center;
+  margin: auto;
+}
+
+.imgLogo img {
+  max-width: 400px;
+}
+
+.sloganInterfaceUsuario{
+    font-size: 130%;
+    width: 225.48px;
+    margin: 2%;
+    text-align: center;
+}
+
+@media (max-width: 832px) {
+    .sloganInterfaceUsuario {
+        font-size: 70%;
+    }
+  }
+
+.menuInterfaceUsuarioDiv{
+    display: block;
+}
+
+.menuInterfaceUsuario{
+  display: flex;
+  flex-direction: column;
+    font-size: 100%;
+    width: 225.48px;
+    display: flex;
+    text-align: left;
+    margin: 2%;
+}
+
+.menuInterfaceUsuario h2{
+  margin-left: 100px;
+}
+
+.usuarioClick{
+  display: flex; 
+  width: 15px; 
+  height: 15px; 
+  cursor: pointer;
+}
+
+.menuInterfaceUsuario img{
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+.slideshow {
+  width: 900px;
+  height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slideshow img {
+  float: left;
+}
+
+#prev,
+#next {
+  position:absolute;
+  display: block;
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  text-indent: -9999px;
+}
+
+#prev {
+  left: 0;
+  background: url(../imgs/Polygon\ 4.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+#next {
+  right: 0;
+  background: url(../imgs/Polygon\ 5.png);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+}
+
+.fraseHead{
+    margin-left: 27px;
+    margin-right: 0%;
+}
+
+.divBotoes{
+    display: flex;
+}
+
+.navCadastro{
+    align-items: center;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #60E1E0;
+}
+
+.navCadastro img{
+    width: 400px;
+    height: 100px;
+}
+
+.bodyCadastro img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 130px;   
+}
+
+.opcaoNavCadastro{
+    margin-top: 10px;
+    margin-right: 320px;
+    display: flex;
+}
+
+
+/*eventos*/ 
+
+.navEventos{
+  display: flex;
+  width: 200px;
+  height: 200px;
+}
+
+
+.barraEventos{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.inputEventos{
+  width: 600px;
+  height: 40px;
+  padding-left: 15px; 
+  border-radius: 8px;
+  font-size: 20px;
+  margin-top: 20px;
+  border: 0; /*eliminando a borda extra da barra*/
+  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+}
+
+.eventosSearchButton{
+  border-radius: 8px;
+  font-size: 20px; 
+  border: 0;
+  margin-top: 20px;
+  background-color: #60E1E0;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bold;
+  color: #002D4C;
+  cursor: pointer;
+  width: 157px;
+  height: 36px;
+  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+}
+
+.eventosButtonArea{
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.filtrosEventos{
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.infoEventoArea{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.infoEvento{
+  display: flex;
+  width: 80%;
+  border-top: 2px solid black;
+}
+
+.eventoImg{
+  width: 450px;
+  height: 350px;
+  margin-left: 200px;
+  margin-top: 40px;
+  border-radius: 50px;
+}
+
+.liEvento{
+  font-size: 15pt;
+  margin-top: 80px;
+  margin-left: 30px;
+  font-family: 'Fredoka', sans-serif;
+  font-weight: bolder;
+}
+
+.liEvento2{
+  font-size: 15pt;
+  margin-top: 40px;
+  font-family: 'Fredoka', sans-serif;
+}
