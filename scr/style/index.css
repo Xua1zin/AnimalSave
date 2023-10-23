@@ -38,6 +38,15 @@
     cursor: pointer;
     transition: 0.5;
 }
+.opcaoNav a{
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: #F7F7E7;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5;
+}
 .opcaoNav p:hover{
     font-size: 21px;
 }
@@ -91,6 +100,7 @@
 .container{
     display: flex;
     flex-direction: column;
+    height: 560px;
 }
 .div1{
     font-family: 'Fredoka One', sans-serif;
@@ -217,4 +227,70 @@
     color: #F7F7E7;
     font-family: 'Fredoka One', sans-serif;
     margin-top: 10px;
+}
+
+
+/* Sobre */
+
+.sobre{
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+.sobre div{
+    display: flex;
+    flex-direction: column;
+}
+.sobre div h2{
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #002D4C;
+}
+.sobre div p{
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    word-spacing: 8px;
+    padding-bottom: 16px;
+}
+.sobre a{
+    text-decoration: none;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Footer */
+
+.footer{
+    display: flex;
+    background-color: #002D4C;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.footer div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer div h3{
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 7px;
+    color: #FF8811;
+}
+.footer div a{
+    text-decoration: none;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 16px;
+    color: #F4E5CB;
+    border-bottom: solid 1px;
 }
