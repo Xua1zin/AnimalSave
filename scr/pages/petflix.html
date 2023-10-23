@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Save &#128571 Petflix</title>
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/petflix.css">
+
+</head>
+
+<body class="backgroundImg">
+    <nav class="interfaceUsuario">
+        <div class="sloganInterfaceUsuario">
+            <h2>Na dúvida, ajude, na certeza, adote.</h2>
+        </div>
+        <div class="imgLogo"><a href="../pages/menu_usuario.html"><img src="../imgs/Rectangle 4.png" alt=""></a>
+
+        </div>
+        <div class="menuInterfaceUsuario">
+            <div class="menuInterfaceUsuarioDiv">
+                <h2>Seja bem vindo,</h2>
+            </div>
+            <div class="usuarioClick">
+                <h2 id="nomeUsuario" onclick="abrirMenu()"></h2>
+                <img src="../imgs/Polygon 6.png" alt="" onclick="abrirMenu()">
+                <div class="menuUsuario" id="menuUsuarioID">
+                    <li><a href="">Assinaturas</a></li>
+                    <li><a href="">Configurações</a></li>
+                    <li><a href="/AnimalSave/index.html">Sair</a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="searchArea">
+            <input class="search" type="text" placeholder="Digite um assunto para buscar vídeos">
+        </div>
+        <div style="justify-content: center; display: flex;">
+            <div class="buttonArea">
+                <button class="searchButton">Dicas</button>
+                <button class="searchButton">Legislação</button>
+                <button class="searchButton">Notícias</button>
+            </div>
+        </div>
+        <div id="carouselVideo">  
+            <div class="hideLeftVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="prevLeftSecondVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="prevVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="selectedVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="nextVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="nextRightSecondVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+
+            <div class="hideRightVideo">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/p_zoF3ZSX3Y" title="Maus Tratos Aos Animais Lei | Duarte Moral Advogados" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; web-share"></iframe>
+            </div>
+        </div>
+
+        <div>
+            <div id="prev" class="arrowLeftVideo"><img style="width: 50px;" src="../imgs/Polygon 4.png" alt="" onclick="moveToSelected()"></div>
+            <div id="next" class="arrowRightVideo"><img style="width: 50px;" src="../imgs/Polygon 5.png" alt="" onclick="moveToSelected()"></div>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../script/petflix.js"></script>
+</body>
+
+</html>

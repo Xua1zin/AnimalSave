@@ -1,18 +1,18 @@
 function abrirMenu() {
-    let ligar = document.getElementById("menuUsuarioID");
+    let ligar = document.getElementById("menuProtetorID");
     if (ligar.style.display === "" || ligar.style.display === "none") {
         ligar.style.display = "block";
     } else {
         ligar.style.display = "none";
     }
 }
-let user = { nome: "Rafaelzinho123" };
-function menuUsuario(user) {
-    let username = document.getElementById("nomeUsuario");
+let user = { nome: "Vida Animal" };
+function menuProtetor(user) {
+    let username = document.getElementById("nomeProtetor");
     username.innerText = user.nome;
     console.log(user.nome);
 }
-menuUsuario(user);
+menuProtetor(user);
 
 function moveToSelected(element) {
     if (element == "next") {
@@ -59,20 +59,20 @@ $(document).keydown(function (e) {
 
 $("#carousel div").click(function () {
     if (parseFloat($(this).css("opacity")) > 0) {
-        moveToSelected($(this));
+      moveToSelected($(this));
     }
   });
   
   $("#prev").click(function () {
     var selected = $(".selected");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-        moveToSelected("prev");
+      moveToSelected("prev");
     }
   });
   
   $("#next").click(function () {
     var selected = $(".selected");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-        moveToSelected("next");
+      moveToSelected("next");
     }
   });
