@@ -6,49 +6,52 @@ function abrirMenu() {
         ligar.style.display = "none";
     }
 }
+
 let user = { nome: "Rafaelzinho123" };
+
 function menuUsuario(user) {
     let username = document.getElementById("nomeUsuario");
     username.innerText = user.nome;
     console.log(user.nome);
 }
+
 menuUsuario(user);
 
 function moveToSelected(element) {
-    if (element == "next") {
-        var selected = $(".selected").next();
-    } else if (element == "prev") {
-        var selected = $(".selected").prev();
+    if (element == "nextVideo") {
+        var selectedVideo = $(".selectedVideo").next();
+    } else if (element == "prevVideo") {
+        var selectedVideo = $(".selectedVideo").prev();
     } else {
-        var selected = element;
+        var selectedVideo = element;
     }
 
-    var next = $(selected).next();
-    var prev = $(selected).prev();
-    var prevSecond = $(prev).prev();
-    var nextSecond = $(next).next();
+    var nextVideo = $(selectedVideo).next();
+    var prevVideo = $(selectedVideo).prev();
+    var prevSecondVideo = $(prevVideo).prev();
+    var nextSecondVideo = $(nextVideo).next();
 
-    $(selected).removeClass().addClass("selected");
+    $(selectedVideo).removeClass().addClass("selectedVideo");
 
-    $(prev).removeClass().addClass("prev");
-    $(next).removeClass().addClass("next");
+    $(prevVideo).removeClass().addClass("prevVideo");
+    $(nextVideo).removeClass().addClass("nextVideo");
 
-    $(nextSecond).removeClass().addClass("nextRightSecond");
-    $(prevSecond).removeClass().addClass("prevLeftSecond");
+    $(nextSecondVideo).removeClass().addClass("nextRightSecondVideo");
+    $(prevSecondVideo).removeClass().addClass("prevLeftSecondVideo");
 
-    $(nextSecond).nextAll().removeClass().addClass("hideRight");
-    $(prevSecond).prevAll().removeClass().addClass("hideLeft");
+    $(nextSecondVideo).nextAll().removeClass().addClass("hideRightVideo");
+    $(prevSecondVideo).prevAll().removeClass().addClass("hideLeftVideo");
 }
 
 // Eventos teclado
 $(document).keydown(function (e) {
     switch (e.which) {
         case 37: // left
-            moveToSelected("prev");
+            moveToSelected("prevVideo");
             break;
 
         case 39: // right
-            moveToSelected("next");
+            moveToSelected("nextVideo");
             break;
 
         default:
@@ -57,22 +60,22 @@ $(document).keydown(function (e) {
     e.preventDefault();
 });
 
-$("#carousel div").click(function () {
+$("#carouselVideo div").click(function () {
     if (parseFloat($(this).css("opacity")) > 0) {
-      moveToSelected($(this));
+        moveToSelected($(this));
     }
-  });
-  
-  $("#prev").click(function () {
-    var selected = $(".selected");
+});
+
+$("#prev").click(function () {
+    var selected = $(".selectedVideo");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-      moveToSelected("prev");
+        moveToSelected("prevVideo");
     }
-  });
-  
-  $("#next").click(function () {
-    var selected = $(".selected");
+});
+
+$("#next").click(function () {
+    var selected = $(".selectedVideo");
     if (selected.length > 0 && parseFloat(selected.css("opacity")) > 0) {
-      moveToSelected("next");
-    }
-  });
+        moveToSelected("nextVideo");
+    }
+});
