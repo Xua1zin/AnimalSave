@@ -29,7 +29,7 @@
     </nav>
     <div class="conteinerForm">
         <img src="../imgs/image 5.png" alt="Cachorro sorrindo">
-        <div class="formDiv" id="formDivID">
+        <div class="formDiv" id="formDivID1">
             <h1>Registre seu animal</h1>
             <div>
                 <input type="radio" required name="especie" value="Cachorro"><label for="especie">Cachorro</label>
@@ -45,31 +45,24 @@
             </div>
 
             <label for="Nome">Nome do pet</label>
-            <input class="inputText" required type="text" name="Nome">
+            <input id="nomeID" class="inputText" required type="text" name="Nome">
 
             <label for="descricao">Sobre o Pet?</label>
-            <textarea class="textareaClass" required name="descricao" id="" cols="30" rows="10"></textarea>
+            <textarea class="textareaClass" required name="descricao" id="descricaoID" cols="30" rows="10"></textarea>
 
             <label for="Idade">Idade do pet?</label>
-            <input class="inputTextNumber" required type="number" name="Idade">
+            <input class="inputTextNumber" required type="number" name="Idade" id="idadeID">
 
             <label for="Raca">Raça</label>
-            <input class="inputText" required type="text" name="Raca">
+            <input class="inputText" required type="text" name="Raca" id="racaID">
 
             <button id="botao">Próximo</button>
         </div>
-        <div class="formDiv">
-            
+        <div class="formDiv" id="formDivID2">
+            <h1>oii</h1>
+            <p>asdasdas</p>
         </div>
     </div>
-    <script src="../script/registrePet.js">
-        let botao = document.getElementById("formDivID");
-        let form = document.querySelector('input[name="especie"]:checked').value;
-        botao.addEventListener('click', function (event) {
-        event.preventDefault();
-        console.log("oi")
-        console.log(form);
-        });
-    </script>
+    <script src="../script/registrePet.js"></script>
 </body>
 </html>

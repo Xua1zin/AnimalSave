@@ -15,12 +15,14 @@ function menuUsuario(user) {
 menuUsuario(user);
 
 let pet = {
+    id: "",
     especie: "",
     sexo: "",
     nome: "",
     descricao: "",
     idade: "",
     raca: "",
+    img: "",
     endereco: {
         cidade: "",
         bairro:"",
@@ -29,13 +31,20 @@ let pet = {
     }
 }
 
+let botao = document.getElementById("botao");
+let form = document.querySelector('input[name="especie"]:checked').value;
+botao.addEventListener('click', function (event) {
+console.log("oi")
+console.log(form);
+});
+
 function nextForm(){
-    let especie = document.querySelector('input[name="especie"]:checked').value;
+    let especie = document.querySelector('input[name="especie"]:checked');
     let Sexo = document.querySelector('input[name="sexo"]:checked').value;
-    let nome = document.querySelector('input[name="Nome"]:checked').value;
-    let descricao = document.querySelector('input[name="descricao"]:checked').value;
-    let idade = document.querySelector('input[name="idade"]:checked').value;
-    let raca = document.querySelector('input[name="raca"]:checked').value;
+    let nome = document.getElementById("nomeID").value
+    let descricao = document.getElementById("descricaoID").value
+    let idade = document.getElementById("idadeID").value
+    let raca = document.getElementById("racaID").value
 
     pet.especie = especie;
     pet.sexo = Sexo;
@@ -44,6 +53,8 @@ function nextForm(){
     pet.idade = idade;
     pet.raca = raca;
 
-    const next = document.getElementById("formDivID");
+    console.log(pet)
+    const next = document.getElementById("formDivID1");
     next.classList.add("esconde");
+    const now = document.getElementById("formDivID2");
 }
