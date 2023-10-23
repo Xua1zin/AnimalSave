@@ -1,0 +1,159 @@
+.bodyCadastro {
+    margin: 0px;
+  }
+  
+  .navCadastro{
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #60E1E0;
+  }
+  
+  .navCadastro img{
+    width: 300px;
+    height: 80px;
+  }
+  
+  .opcaoNavCadastro{
+    margin-top: 10px;
+    margin-right: 320px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .opcaoNavCadastro p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #001535;
+    margin: 15px;
+    cursor: pointer;
+    transition: 0.5;
+  }
+  
+  .opcaoNavCadastro p:hover{
+    font-size: 21px;
+  }
+  
+  .tracoCadastro{
+    height: 60px;
+    width: 1px;
+    background-color: #001535;
+  }
+  
+  .botoesLoginCadastro {
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #001535;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
+    margin-top: 7px;
+    cursor: pointer;
+    width: 80px;
+  }
+  
+  .botoesLoginCadastro p{
+    margin: 0px;
+    transition: 0.5;
+  }
+
+  .corpoCadastro {
+    color: #000;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight:lighter;
+    line-height: normal;
+    margin-left: 10px;
+    margin-bottom: 200px;
+  }
+
+  .coracaoCadastro p{
+    font-style: bold;
+    font-size: 30px;
+  }
+
+  .alinharOpcoes {
+    display: grid;
+    justify-content: left;
+  }
+
+  .alinharOpc2 {
+    flex-direction: row;
+  }
+  
+  .botoesLoginCadastro a{
+    margin: 4px;
+    transition: 0.5;
+    text-decoration: none;
+    color: #001535;
+  }
+  .botoesLoginCadastro p:hover{
+    font-size: 21px;
+  
+  }
+  .botoesLoginCadastro a:hover{
+    font-size: 21px;
+  }
+  
+  .coracaoCadastro img{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 100px;   
+  }
+
+  .containerCadastro {
+    width: 50%;
+    height: 100%%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+  .tracoCadastro2 {
+    height: 500px;
+    width: 2px;
+    background-color: #001535;
+    align-content: center;
+  }
+
+  .botaoNextCadastro {
+    background-color: #ffffff;
+    border: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #60E1E0;
+    color: #60E1E0;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+   .cadastroFisico {
+    display: none;
+    flex-direction: column;
+  }
+
+  .cadastroFisico input{
+    background-color: #ccf9f9;
+    border: 2px;
+    border-radius: 10px;
+  }
+  
+  .ocultaTexto {
+    display: none;
+  }

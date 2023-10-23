@@ -4,67 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scr/style/reset.css">
-    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/cadastro.css">
+    <link href='https://fonts.googleapis.com/css?family=Fredoka' rel='stylesheet'>
     <title>Animal Save &#128568 Cadastro</title>
 </head>
-<body id="bodyCadastro">
+<body class="bodyCadastro">
     <nav class="navCadastro">
         <div> <img src="../imgs/animalSaveAzulClaro 2.png" alt="Logo AnimalSave Azul Claro"></div>
 
         <div class="opcaoNavCadastro">
-                <p>Sobre</p>
-                <div class="traço"></div>
-                <p>Transparência</p>
-                <div class="traço"></div>
-                <p>Legislação</p>
-            </div>
+            <p>Sobre</p>
+            <div class="tracoCadastro"></div>
+            <p>Transparência</p>
+            <div class="tracoCadastro"></div>
+            <p>Legislação</p>
         </div>
 
         <div class="botoesLoginCadastro">
-            <p>Login</p>
+            <p onclick="abrirMenu()" href="./scr/pages/cadastro.html">Login</p>
         </div>
     </nav>
 
-    <div class="bodyCadastro">
+    <div class="coracaoCadastro">
         <img src="../imgs/coracaoAzulEscuro.png" alt="Corações da borda">
 
-        <div>
-            <h2>Como deseja se registrar?</h2>
+        <div class="containerCadastro">
+            <div class="tracoCadastro2"></div>
 
-            <div>
-                <div>
-                    <input type="checkbox" name="doador" value="azul"><br/> 
-                    <p>Como doador</p>
+            <div id="corpoCadastroID" class="corpoCadastro">
+                
+                <div id="tipoCadastroDIV">
+                    <h2>Como deseja contribuir?</h2>
+                    <div class="alinharOpcoes">
+                        <div class="alinharOpc2"><input id="doadorID" type="radio" required name="tipoContribuicao" value="doador"><label>Como doador</label></div>
+                        <div class="alinharOpc2"><input id="protetorID" type="radio" required name="tipoContribuicao" value="protetor"><label>Como protetor</label></div>
+                    </div>
+
+                    <h2>Registrar-se como:</h2>
+                    <div class="alinharOpcoes">
+                        <div class="alinharOpc2"><input id="cadCPF" type="radio" required name="tipoCadastro" value="fisica"><label>Pessoa Física</label></div>
+                        <div class="alinharOpc2"><input id="cadCNPJ" type="radio" required name="tipoCadastro" value="juridica"><label>Pessoa Jurídica</label></div>
+                    </div>
+                    <button id="buttonNext" onclick="mostrarTexto()" class="botaoNextCadastro">Próximo</button>
                 </div>
 
-                <div>
-                    <input type="checkbox" name="doador" value="azul"><br/> 
-                    <p>Como protetor</p>
+                <div id="cadfisico" class="cadastroFisico">
+                    <h2>Cadastro de PESSOA FÍSICA:</h2>
+
+                    <label>Nome:</label><input id="nomeCPF" type="text" required name="nomeCPF">
+                    <label>Sobrenome:</label><input id="sobrenomeCPF" type="text" required name="sobrenomeCPF">
+                    <label>CPF:</label><input id="CPF" type="text" required name="CPF">
+                    <label>Data de Nascimento:</label><input id="dataNasc" type="text" required name="dataNasc">
+                    <label>E-mail:</label><input id="emailCPF" type="text" required name="emailCPF">
+                    <label>Endereço completo:</label><input id="endCPF" type="text" required name="endCPF">
+
+                    <button id="buttonSave" onclick="salvarCadastro()" class="botaoNextCadastro">Salvar</button>
                 </div>
 
-            </div>   
+                <div class="cadSalvo" id="cadConcluido" style="display: none;">
+                    <p>Cadastro concluído com sucesso!</p>
+                </div>
+                
+            </div>
 
         </div>
 
-        <div>
-
-            <h2>Registrar-se como pessoa:</h2>
-
-            <div>
-                <div>
-                    <input type="checkbox" name="doador" value="azul"><br/> 
-                    <p>Física</p>
-                </div>
-
-                <div>
-                    <input type="checkbox" name="doador" value="azul"><br/> 
-                    <p>Jurídica</p>
-                </div>
-
-            </div>  
-
-        </div>
+        
     </div>
-    
+    <script src="../script/cadastro.js"></script>
 </body>
 </html>
