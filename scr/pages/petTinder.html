@@ -4,24 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/scr/style/reset.css">
-    <link rel="stylesheet" href="/scr/style/style.css">
+    <link rel="stylesheet" href="/scr/style/tinder.css">
     <title>Pet Tinder</title>
 </head>
 <body id="bodyPetID">
-    <header class="headerPetTinder">
-        <div class="mensajeBienvenida">
-            <p>Na duvida, ajude, na</p>
-            <p class="fraseHead">
-                certeza, adote.
-            </p>
+    <header class="interfaceUsuario">
+        <div class="sloganInterfaceUsuario">
+            <h2>Na dúvida, ajude, na certeza, adote.</h2>
         </div>
-        <img src="/scr/imgs/Rectangle 4.png" alt="Logo Animal Save">
-        <div>
-            <p id="bienID">Seja bem-vindo</p>
+        <div class="imgLogo"><a href="/scr/pages/menu_usuario.html"><img src="../imgs/Rectangle 4.png" alt=""></a>
+
+        </div>
+        <div class="menuInterfaceUsuario">
+            <div class="menuInterfaceUsuarioDiv">
+                <h2>Seja bem vindo,</h2>
+            </div>
+            <div class="usuarioClick">
+                <h2 id="nomeUsuario" onclick="abrirMenu()"></h2>
+                <img src="../imgs/Polygon 6.png" alt="" onclick="abrirMenu()">
+                <div class="menuUsuario" id="menuUsuarioID">
+                    <li>
+                        <a href="">Assinaturas</a>
+                    </li>
+                    <li>
+                        <a href="">Configurações</a>
+                    </li>
+                    <li>
+                        <a href="/index.html">Sair</a>
+                    </li>
+                </div>
+            </div>
         </div>
     </header>
-    <main class="mainPetTinder">
-        <div>
+    <main class="mainPetTinder" id="main1">
+       <!-- <div>
             <p>
                 <h1 class="nombrePerro">Mauricio</h1>
                 <h2 class="titulo">3 anos</h2>
@@ -30,28 +46,39 @@
         <div>
             <img src="/scr/imgs/Rectangle 61.png" alt="Cachorro em adoçao" class="cachorroAdoçao">
             <div class="divBotoes">
-                <img src="/scr/imgs/Slice 3.png" alt="" class="quiero">
-                <img src="/scr/imgs/Slice 2.png" alt="" class="quiero">
+                <img src="/scr/imgs/Slice 2.png" alt="" onclick="cambiarMain()">
+                <img src="/scr/imgs/Slice 3.png" alt="" onclick="">
             </div>
         </div>
         <section>
             <ul class="descripcion">
-                <li>Sexo: Macho.</li>
-                <li>Raça: SRD.</li>
-                <li>Perfil comportamental:
+                <li id="sexoID">
+                    <p class="tituloDatos">Sexo:</p>
+                    <p class="espacioDados">Macho.</p>
+                </li>
+                <li id="racaID">
+                    <p class="tituloDatos">Raça:</p>
+                    <p class="espacioDados">SMD.</p>
+                </li>
+                <li>
+                    <p class="tituloDatos">Perfil comportamental:</p>
                     <p>Treinado, fofo, nao morde,</p>
                     <p>brincalhao e cheio de amor.</p>
                 </li>
-                <li>Historico:
+                <li>
+                    <p class="tituloDatos">Historico:</p>
                     <p>Abandonado há 1</p>
                     <p>ano, primeira adoçao.</p>
                 </li>
-                <li>Para me conhecer melhor:
-                    <h5>Animal save,</h5>
-                    <h5>Rua X, 123</h5>
+                <li>
+                    <p>Para me conhecer melhor:</p>
+                    <h5 class="tituloDatos">Animal save,</h5>
+                    <h5 class="tituloDatos">Rua X, 123</h5>
                 </li>
             </ul>
-        </section>
+        </section> -->
     </main>
+
+    <script src="/scr/script/petTinder.js"></script>
 </body>
 </html>
