@@ -1,0 +1,31 @@
+/* Footer */
+
+.footer{
+    display: flex;
+    background-color: #002D4C;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.footer div{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.footer div h3{
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    padding: 7px;
+    color: #FF8811;
+}
+.footer div a{
+    text-decoration: none;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 500;
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 16px;
+    color: #F4E5CB;
+    border-bottom: solid 1px;
+}
