@@ -6,7 +6,7 @@ function abrirMenu() {
         ligar.style.display = "none";
     }
 }
-let user = { nome: "Rafaelzinho123" };
+let user = { nome: "Hiago Rocha" };
 function menuUsuario(user) {
     let username = document.getElementById("nomeUsuario");
     username.innerText = user.nome;
@@ -21,8 +21,8 @@ let pets = [
 {
     id: "1",
     especie: "cachorro",
-    sexo: "Macho.",
-    nome: "Rebert.",
+    sexo: "Macho",
+    nome: "Rebert",
     descricao: "Grande e pequeno mas forte e fraco.",
     idade: "18",
     raca: "SMD",
@@ -98,6 +98,9 @@ function criaCachorro(){
         pConheca.classList.add("tituloDatos")
         pSexoValor.classList.add("espacioDados");
         pRacaValor.classList.add("espacioDados");
+        pPerfilValor1.classList.add("espacioDados");
+        h5.classList.add("espacioDados");
+        h5Endereco.classList.add("espacioDados");
 
         nomePet.innerText = pets[contador].nome;
         idadePet.innerText = `${pets[contador].idade} anos`;

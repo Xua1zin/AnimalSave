@@ -92,9 +92,8 @@
 }
 
 .usuarioClick{
-  display: flex; 
-  width: 15px; 
-  height: 15px; 
+  display: flex;
+  height: 15px;
   cursor: pointer;
 }
 
@@ -181,7 +180,6 @@
 
 .tituloDatos{
     font-weight: bold;
-    font-family: 'Fredoka', sans-serif;
 }
 
 
@@ -190,6 +188,7 @@
     flex-direction: column;
     margin-top: 1cm;
     font-size: 25px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #sexoID{
@@ -198,11 +197,14 @@
 
 .espacioDados{
     padding-left: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 23px;
 }
 
 .descripcion li{
     padding: 10px;
     padding-left: 15px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -216,16 +218,19 @@
 
 .nuevoPet{
     display: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #main2{
     display: none;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .main2class{
     display: flex;
     justify-content: center;
     width: 100%;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #imagenesMain2{
@@ -244,6 +249,7 @@
     color: #002D4C;
     font-family: 'Fredoka', sans-serif;
     font-size: 23px;
+
 }
 
 .cachorroAdoçao2{
@@ -274,4 +280,5 @@
 
 .espacioDados2{
     padding-left: 5px;
+    font-family: 'Quicksand', sans-serif;
 }

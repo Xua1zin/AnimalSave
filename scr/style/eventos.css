@@ -6,7 +6,9 @@
 /*Home usuario*/
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
 
-
+body{
+  background-color: #F4E5CB;
+}
 .interfaceUsuario{
     display: flex;
     top: 0;
@@ -95,9 +97,8 @@
 }
 
 .usuarioClick{
-  display: flex; 
-  width: 15px; 
-  height: 15px; 
+  display: flex;
+  height: 15px;
   cursor: pointer;
 }
 
@@ -204,7 +205,6 @@
   font-size: 20px;
   margin-top: 20px;
   border: 0; /*eliminando a borda extra da barra*/
-  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
 }
 
 .eventosSearchButton{
@@ -219,7 +219,6 @@
   cursor: pointer;
   width: 157px;
   height: 36px;
-  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
 }
 
 .eventosButtonArea{
@@ -246,6 +245,7 @@
   display: flex;
   width: 80%;
   border-top: 2px solid black;
+  margin-bottom: 100px;
 }
 
 .eventoImg{
@@ -255,14 +255,16 @@
   margin-top: 40px;
   border-radius: 50px;
 }
-
 .liEvento{
+  display: flex;
+  flex-direction: column;
   font-size: 15pt;
   margin-top: 80px;
   margin-left: 30px;
   font-family: 'Fredoka', sans-serif;
-  font-weight: bolder;
+  padding-left: 0;
 }
+
 
 .liEvento2{
   font-size: 15pt;

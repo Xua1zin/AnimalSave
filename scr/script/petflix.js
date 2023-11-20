@@ -7,7 +7,7 @@ function abrirMenu() {
     }
 }
 
-let user = { nome: "Rafaelzinho123" };
+let user = { nome: "Hiago Rocha" };
 
 function menuUsuario(user) {
     let username = document.getElementById("nomeUsuario");
