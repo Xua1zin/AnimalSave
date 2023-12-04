@@ -5,104 +5,102 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;700&family=Freehand&family=Quicksand:wght@300;400;500;700&family=Roboto:wght@300;400;500&display=swap');
 
-.interfaceUsuario{
+.interfaceUsuario {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100px;
     background-color: #FF8811;
-}
-
-.interfaceUsuario h2{
+    z-index: 11;
+  }
+  
+  .interfaceUsuario h2 {
     color: #002D4C;
     font-family: 'Fredoka', sans-serif;
     font-weight: bold;
-}
-
-.menuUsuario {
-  top: 10%;
-  margin-left: 100px;
-  display: none;
-  flex-direction: column;
-  position: absolute;
-  box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
-  background-color: #F4E5CB;
-  color: #002D4C;
-  font-family: 'Quicksand', sans-serif;
-  font-size: 15px;
-  height: 70px;
-  width: 112px;
-  border-radius: 5px;
-  z-index: 6;
-}
-
-.menuUsuario li{
-  display: block;
-  list-style-type: none;
-  margin: 4px;
-}
-
-.menuUsuario li a{
-  text-decoration: none;
-  color: black;
-}
-
-.menuUsuario li a:hover{
-  text-decoration:underline;
-}
-
-.imgLogo{
-  width: 40%;
-  text-align: center;
-  margin: auto;
-}
-
-.imgLogo img {
-  max-width: 400px;
-}
-
-.sloganInterfaceUsuario{
+  }
+  
+  .menuUsuario {
+    top: 70px;
+    margin-left: 100px;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    box-shadow: 4px 4px 5px rgba(34, 33, 33, 0.5);
+    background-color: #F4E5CB;
+    color: #002D4C;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 15px;
+    height: 70px;
+    width: 112px;
+    border-radius: 5px;
+    z-index: 12;
+  }
+  
+  .menuUsuario li {
+    display: block;
+    list-style-type: none;
+    margin: 4px;
+  }
+  
+  .menuUsuario li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .menuUsuario li a:hover {
+    text-decoration: underline;
+  }
+  
+  .imgLogo {
+    width: 40%;
+    text-align: center;
+    margin: auto;
+  }
+  
+  .imgLogo img {
+    max-width: 400px;
+  }
+  
+  .sloganInterfaceUsuario {
     font-size: 130%;
     width: 225.48px;
-    margin: 2%;
+    margin: 1.9%;
     text-align: center;
-}
-
-@media (max-width: 832px) {
-    .sloganInterfaceUsuario {
-        font-size: 70%;
-    }
   }
-
-.menuInterfaceUsuarioDiv{
+  
+  .menuInterfaceUsuarioDiv {
     display: block;
-}
-
-.menuInterfaceUsuario{
-  display: flex;
-  flex-direction: column;
+  }
+  
+  .menuInterfaceUsuario {
+    display: flex;
+    flex-direction: column;
     font-size: 100%;
     width: 225.48px;
     display: flex;
     text-align: left;
-    margin: 2%;
-}
-
-.menuInterfaceUsuario h2{
-  margin-left: 100px;
-}
-
-.usuarioClick{
-  display: flex;
-  height: 15px;
-  cursor: pointer;
-}
-
-.menuInterfaceUsuario img{
+    margin: 1.9%;
+  }
+  
+  .menuInterfaceUsuario h2 {
+    margin-left: 100px;
+  }
+  
+  .usuarioClick {
+    display: flex;
+    white-space: nowrap;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  
+  .menuInterfaceUsuario img {
     width: 15px;
     margin-top: 5px;
     margin-bottom: 1px;
     margin-left: 2px;
-}
+  }
 
 
 /* sectionPet*/
