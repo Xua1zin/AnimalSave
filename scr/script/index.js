@@ -8,7 +8,7 @@ function abrirMenu(){
 };
 function login(chave){
     localStorage.setItem("login", chave);
-    window.location.href = "http://127.0.0.1:5502/scr/pages/menu_usuario.html";
+    window.location.href = "http://127.0.0.1:5500/AnimalSave/scr/pages/menu_usuario.html";
 }
 window.onload = function verificaLogin(){
     let loginRecuperada = localStorage.getItem('login')
